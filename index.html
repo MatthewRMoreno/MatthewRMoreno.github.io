@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html langh="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Matthew Moreno Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/16a87a112f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="photos/Screenshot 2023-03-08 at 10.11.57 PM.png" class="logo">
+                    <ul id="sidemenu">
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <!-- testing commits to github -->
+                    <h1>Hi, I'm <span>Matthew</span><br> From San Antonio, TX</h1>
+                </div>
+            </div>
+        </div>
+        <!--About Me-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photos/Art_Photo2.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>As a Composed Software Developer, I possess extensive experience in full-stack development, building websites with a focus on innovative and scalable programs. I am deeply passionate about continuously improving my understanding of how technology operates to create holistic and efficient outcomes. My unwavering determination and drive to learn enable me to write top-quality code that achieves the desired outcomes while adhering to best practices.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div id="skills" class="tab-contents active-tab">
+                            <ul>
+                                <li><span>Front-end</span><br>Creating interactive web user interfaces</li>
+                                <li><span>Back-end</span><br>Server-side programming and data management</li>
+                                <li><span>Full-stack</span><br>Web development from front-end to back-end</li>
+                            </ul>
+                        </div>
+                        <div id="experience" class="tab-contents">
+                            <ul>
+                                <li><span>2020 - Current</span><br>Personal Shopper at H-E-B</li>
+                                <li><span>2019 - 2020</span><br>Linesman/Cook at Bill Millers BBQ</li>
+                            </ul>
+                        </div>
+                        <div id="education" class="tab-contents">
+                            <ul>
+                                <li><span>2022</span><br>Full Stack Web Development Bootcamp at Codeup</li>
+                                <li><span>2019 - 2020</span><br>University of Texas at San Antonio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Front-end Web development</h2>
+                        <p>As a front-end web developer, I specialize in creating visually stunning, user-friendly websites optimized for all devices using HTML, CSS, Bootstrap and JavaScript. With expertise in cross-browser compatibility, website performance, and testing, I ensure every website is efficient, fast-loading, and error-free. I'm passionate about clean, efficient code and attention to detail, making me an ideal candidate to help create a responsive, high-performing website</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-window-restore"></i>
+                        <h2>Back-end Web development</h2>
+                        <p>I am a full-stack web developer experienced in Java, Node.js, SQL, and Spring Boot. I specialize in creating scalable, secure web applications with efficient API design, database management, and robust security measures. My proficiency in JUnit and other testing tools allows me to quickly catch and fix bugs. Whether you need a custom web application or a complex database solution, I have the expertise to exceed your expectations.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h2>Full-stack Web Devlopment</h2>
+                        <p>I'm a full-stack web developer experienced in creating dynamic and engaging web applications using a range of tools and languages like HTML, CSS, JavaScript, Java, Node.js, SQL, and more. Whether you need a custom front-end design, a secure and scalable back-end infrastructure, or both, I have the skills and expertise to deliver a full-stack solution that meets your specific needs. I'm committed to delivering high-quality, thoroughly tested, and secure code optimized for performance.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="photos/Gameface.png">
+                        <div class="layer">
+                            <h3>Gameface</h3>
+                            <p>GameFace is a social media platform for gamers that uses HTML, CSS, and JavaScript for the front-end, and Java with Spring Boot, Amazon RDS, and Amazon S3 for the back-end. It features Google authentication, RAWG API integration for showcasing favorite games, and Filestack API integration for social features like posts, likes, comments, and highlights. GameFace allows users to find gaming partners based on various criteria, creating a safe and inclusive gaming environment</p>
+                            <a href="https://github.com/GameFaceProductions"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/design-project.png">
+                        <div class="layer">
+                            <h3>UI Design Project</h3>
+                            <p>The design project is a paired programming exercise that utilizes HTML and CSS to create a mockup of a webpage designed for employers. The layout of the design project is highly versatile and can serve as a solid foundation for any type of website. It can be easily modified to meet the specific needs and preferences of the website's intended audience.</p>
+                            <a href="https://github.com/zachary-a-johnson42/design-johnson-moreno"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/coffee-project.png">
+                        <div class="layer">
+                            <h3>Rocket Roasts Coffee</h3>
+                            <p>Rocket Roasts Coffee is an exciting paired programming web application that leverages CSS, HTML, and JS to create a dynamic coffee shop website. This innovative platform enables users to easily search through a vast selection of coffees and roasts based on either the coffee name or roast preference. Users can conveniently add or remove their preferred coffees as desired, making for a highly personalized and satisfying coffee selection experience.</p>
+                            <a href="https://github.com/MatthewRMoreno/coffee-Ashley-Matthew"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/movie-project.png">
+                        <div class="layer">
+                            <h3>Groovy Movies Project</h3>
+                            <p>Groovy Movies is a paired programming project that uses CSS, HTML, API's, and JS to create a movie browsing website. It features a search bar for filtering through a large movie database and displays movie ratings, descriptions, and genres. Its unique rotating card feature shows a movie poster on one side and a detailed movie description on the other, making it a fun and engaging way to discover new films.</p>
+                            <a href="https://github.com/Movie-denzel-matthew-louie/Movie-Backend-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/starwars-project.png">
+                        <div class="layer">
+                            <h3>Star Wars Design Project</h3>
+                            <p>The Star Wars project is a solo undertaking that showcases proficiency in HTML, JavaScript, and CSS by recreating the iconic opening crawl of the Star Wars movies. This project serves as an impressive display of CSS capabilities, showcasing the type of work that can be expected from me. Users have the freedom to input any text they choose to display within the opening crawl.Ultimately, the Star Wars project is an impressive showcase of technical skill, creativity, and attention to detail, sure to captivate any employer or Star Wars fan.</p>
+                            <a href="https://github.com/MatthewRMoreno/Code-Up-Practice/tree/main/Star%20Wars%20Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-------------- Contact ---------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> matthew.r.moreno21@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/matthewmoreno2100/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/matt_moreno21"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/matthew.moreno21/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/matthew.moreno.7545/"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="photos/My_Resume.pdf" download class="btn btn2">My Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Matthew</p>
+            </div>
+        </div>
+
+        <script>
+
+            let tablinks = document.getElementsByClassName("tab-links")
+            let tabcontents = document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+            // Close and open function for the menu bar
+            
+            let sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+            
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyOoDZqPakCs_4V1hbmsN2CzSSJU3N7LZeYMc_1uLfgT6hi8dlH4EnKILKXiFJiMnIeBw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    </body>
+</html>
